@@ -2,7 +2,7 @@
 
 from unittest import mock
 
-from use_cases.room_list import list_rooms, save_registration
+from use_cases.room_list import list_rooms
 
 def test_room_list_without_parameter(domain_rooms):
     repo = mock.Mock()

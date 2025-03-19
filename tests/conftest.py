@@ -1,5 +1,6 @@
 import uuid
 import pytest
+from application.app import create_app
 from domain.room import Room
 
 
@@ -39,3 +40,10 @@ def domain_rooms():
 
 
     return [room_1, room_2, room_3, room_4]
+
+
+
+def app():
+    app = create_app("testing")
+
+    return app
