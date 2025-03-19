@@ -1,2 +1,6 @@
-def room_list_use_case(repo):
+from domain.room import Room
+
+def list_rooms(repo):
     return repo.list()
+
+
